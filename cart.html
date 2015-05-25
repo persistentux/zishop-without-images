@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ZISHOP - Cart</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- include pace script for automatic web page progress bar  -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
+
+
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+
+    <script src="assets/js/pace.min.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- Fixed navbar start -->
+<div class="navbar navbar-tshop navbar-fixed-top megamenu" role="navigation">
+    <div class="navbar-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                    <div class="pull-left ">
+                        <div class="logo-top"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
+                    <div class="pull-right">
+                        <ul class="userMenu ">
+                            <li><a href="#."><span class=""> My Account</span> <i
+                                    class="glyphicon glyphicon-user hide  "></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#ModalLogin"> <span class="hid den-xs">Sign In</span>
+                                <i class="glyphicon glyphicon-log-in hide  "></i> </a></li>
+                            <li class="hi dden-xs"><a href="#" data-toggle="modal" data-target="#ModalSignup"> Create
+                                Account </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.navbar-top-->
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button>
+            <button type="button" class="navbar-toggle icon-sub-menu" data-toggle="collapse"></button>
+            <button type="button" class="navbar-toggle icon-view-cart" data-toggle="collapse"></button>
+            <a class="navbar-brand " href="index.html"> <img src="images/logo.png" alt="TSHOP"> </a>
+
+            <!-- this part for mobile -->
+            <!--<div class="search-box pull-right hidden-lg hidden-md hidden-sm">
+                <div class="input-group">
+                    <button class="btn btn-nobg getFullSearch" type="button"><i class="fa fa-search"> </i></button>
+                </div>
+
+            </div>-->
+        </div>
+
+        <!-- this part is duplicate from cartMenu  keep it for mobile -->
+        
+        <!--/.navbar-cart-->
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html"> Home </a></li>
+                <li><a href="category.html"> Categories </a></li>
+                <li><a href="contact-us.html"> Contact Us </a></li>
+                
+            </ul>
+
+			
+            <!--- this part will be hidden for mobile version -->
+            <div class="nav navbar-nav navbar-right hidden-xs">
+                <div class="cartMenus "><a href="cart.html" class="" > View Cart<span class="count1">1</span></a></div>
+                    <!--/.dropdown-menu-->
+                </div>
+                <!--/.cartMenu-->
+
+                
+                <!--/.search-box -->
+            </div>
+            <!--/.navbar-nav hidden-xs-->
+        </div>
+        <!--/.nav-collapse -->
+	<div class="search-bar-container container">
+		<div class="search-bar">
+    	<input type="text" onfocus="if (this.value=='Search for a brand, product or specific item')
+{this.value='';}" onblur="if (this.value=='') {this.value='Search for a brand, product or specific item';}" value="Search for a brand, product or specific item"  />
+        <a href="#." class="icon-close"></a>
+    </div>
+	</div>
+</div>
+<!-- /.Fixed navbar  -->
+
+
+<div class="container main-container headerOffset">
+    
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="row userInfo cart-info">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="cartContent w100">
+                        <table class="cartTable table-responsive" style="width:100%">
+                            <tbody>
+
+                            <tr class="CartProduct cartTableHeader">
+                                <td style="width:25%"> Product</td>
+                                <td style="width:40%">&nbsp;</td>
+                                <td style="width:10%" class="de lete">Quantity</td>
+                                <td style="width:10%">Unit Price</td>
+                                <td style="width:10%">Total</td>
+                                <td style="width:10%">&nbsp;</td>
+                            </tr>
+
+                            <tr class="CartProduct">
+                                <td class="CartProductThumb">
+                                    <div><a href="product-details.html"><img src="images/cart-1.jpg"  /></a>
+                                    </div>
+                                </td>
+                                <td valign="top">
+                                    <div class="CartDescription">
+                                        <h4><a href="product-details.html">MADAME UPPER BLACK</a></h4>
+                                        <p>Rem sapiente facilis debitis ut cupiditate aspernatur exercitationem tempore eligendi eaque excepturi ...</p>
+                                    </div>
+                                </td>
+                                
+                              <td valign="top"><input class="quanitySniper" type="text" value="2" name="quanitySniper"></td>
+                                <td valign="top"><strong>$84.34</strong></td>
+                                <td valign="top"><strong>$168.68</strong></td>
+                                         <td valign="top" class="delete"><a href="#."><img src="images/icon-delete.jpg" width="15" height="15"></a></td>
+                            </tr>
+
+                           
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--cartContent-->
+					<div class="cart-footer">
+                    	<div class="pull-left">
+                        	<a href="index.html" class="btn btn-default"> Continue shopping </a>
+                            	<a href="index.html" class="btn btn-default"> Empty Cart </a>
+                            </div>
+                            <div class="pull-right">
+                            	<div class="charges">
+                                	<ul class="charges-detail">
+                                    	<li class="delivery">Delivery Charges</li>
+                                        <li class="free"><strong>Free</strong></li>
+                                        <li class="payable clearLeft">Payable Amount </li>
+                                        <li class="price">$168.68</li>
+                                    </ul>
+                                    <ul class="button-holder">
+                                    	<li>
+                                            <input type="button" class="btn btn-warning btn_cart icon_btn_cart2" value="UPDATE CART">
+                                        </li>
+                                        <li>
+                                             <input type="button" class="btn btn-warning btn_cart icon_btn_cart3 margin_left" value="CHECK OUT">
+                                        </li>
+                                    </ul>
+<!--
+                                    <ul class="button-holder">
+                                    	<li><a href="#." class="update-cart"></a></li>
+                                        <li><a href="#." class="checkout"></a></li>
+                                    </ul>
+-->
+                                
+                                </div>
+                            </div>
+                    </div>
+                    <!--<div class="cartF ooter w100">
+                        <div class="box-footer">
+                            <div class="pull-left"><a href="index.html" class="btn btn-default"> <i
+                                    class="fa fa-arrow-left"></i> &nbsp; Continue shopping </a></div>
+                            <div class="pull-right">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-undo"></i> &nbsp; Update
+                                    cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--/ cartFooter -->
+
+                </div>
+            </div>
+            <!--/row end-->
+
+        </div>
+        
+        <!--/rightSidebar-->
+
+    </div>
+    <!--/row-->
+
+    <div style="clear:both"></div>
+</div>
+<!-- /.main-container -->
+
+<div class="gap"></div>
+
+<footer>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left">  2015 &copy; SpreeWorks </p>
+
+            <div class="col-center">
+				<ul class="footer-link">
+                	<li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom-->
+</footer>
+
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- include  parallax plugin -->
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.js"></script>
+
+<!-- optionally include helper plugins -->
+<script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.min.js"></script>
+
+<!-- include mCustomScrollbar plugin //Custom Scrollbar  -->
+
+<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+
+<!-- include checkRadio plugin //Custom check & Radio  -->
+<script type="text/javascript" src="assets/js/ion-checkRadio/ion.checkRadio.min.js"></script>
+
+<!-- include grid.js // for equal Div height  -->
+<script src="assets/js/grids.js"></script>
+
+<!-- include carousel slider plugin  -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- jQuery minimalect // custom select   -->
+<script src="assets/js/jquery.minimalect.min.js"></script>
+
+<!-- include touchspin.js // touch friendly input spinner component   -->
+<script src="assets/js/bootstrap.touchspin.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
+
+

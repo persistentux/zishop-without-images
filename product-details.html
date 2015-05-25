@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <title>ZISHOP - Category</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- styles needed by smoothproducts.js for product zoom  -->
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <link href="assets/plugins/rating/bootstrap-rating.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
+
+
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- include pace script for automatic web page progress bar  -->
+
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="assets/js/pace.min.js"></script>
+</head>
+
+<body>
+
+
+<!-- Fixed navbar start -->
+<div class="navbar navbar-tshop navbar-fixed-top megamenu" role="navigation">
+    <div class="navbar-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                    <div class="pull-left ">
+                        <div class="logo-top"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
+                    <div class="pull-right">
+                        <ul class="userMenu ">
+                            <li><a href="#."><span class=""> My Account</span> <i
+                                    class="glyphicon glyphicon-user hide  "></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#ModalLogin"> <span class="hid den-xs">Sign In</span>
+                                <i class="glyphicon glyphicon-log-in hide  "></i> </a></li>
+                            <li class="hi dden-xs"><a href="#" data-toggle="modal" data-target="#ModalSignup"> Create
+                                Account </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.navbar-top-->
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button>
+            <button type="button" class="navbar-toggle icon-sub-menu" data-toggle="collapse"></button>
+            <button type="button" class="navbar-toggle icon-view-cart" data-toggle="collapse"></button>
+            <a class="navbar-brand " href="index.html"> <img src="images/logo.png" alt="TSHOP"> </a>
+
+            <!-- this part for mobile -->
+            <!--<div class="search-box pull-right hidden-lg hidden-md hidden-sm">
+                <div class="input-group">
+                    <button class="btn btn-nobg getFullSearch" type="button"><i class="fa fa-search"> </i></button>
+                </div>
+
+            </div>-->
+        </div>
+
+        <!-- this part is duplicate from cartMenu  keep it for mobile -->
+        <div class="navbar-cart  collapse">
+            <div class="cartMenu  col-lg-4 col-xs-12 col-md-4 ">
+                <div class="w100 miniCartTable scroll-pane">
+                    <table>
+                        <tbody>
+                        <tr class="miniCartProduct">
+                            <td style="20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/2.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/5.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/4.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="5%" class="delete"><a> x </a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--/.miniCartTable-->
+
+                <div class="miniCartFooter  miniCartFooterInMobile text-right">
+                    <h3 class="text-right subtotal"> Subtotal: $210 </h3>
+                    <a class="btn btn-sm btn-danger"> <i class="fa fa-shopping-cart"> </i> VIEW CART </a> <a
+                        class="btn btn-sm btn-primary"> CHECKOUT </a></div>
+                <!--/.miniCartFooter-->
+
+            </div>
+            <!--/.cartMenu-->
+        </div>
+        <!--/.navbar-cart-->
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="#"> Home </a></li>
+                <li><a  href="category.html"> Categories </a></li>
+                <li><a href="contact-us.html"> Contact Us </a></li>
+                
+            </ul>
+
+			
+            <!--- this part will be hidden for mobile version -->
+            <div class="nav navbar-nav navbar-right hidden-xs">
+                <div class="cartMenus "><a href="cart.html" class="" > View Cart<span class="count0">1</span></a></div>
+                    <!--/.dropdown-menu-->
+                </div>
+                <!--/.cartMenu-->
+
+                
+                <!--/.search-box -->
+            </div>
+            <!--/.navbar-nav hidden-xs-->
+        </div>
+        <!--/.nav-collapse -->
+   
+	<div class="search-bar-container container">
+	<div class="search-bar">
+    	<input type="text" onfocus="if (this.value=='Search for a brand, product or specific item')
+{this.value='';}" onblur="if (this.value=='') {this.value='Search for a brand, product or specific item';}" value="Search for a brand, product or specific item"  />
+        <a href="#." class="icon-close"></a>
+    </div>
+</div>
+</div>
+    <!--/.container -->
+
+    <div class="search-full text-right"><a class="pull-right search-close"> <i class=" fa fa-times-circle"> </i> </a>
+
+        <div class="searchInputBox pull-right">
+            <input type="search" data-searchurl="search?=" name="q" placeholder="start typing and hit enter to search"
+                   class="search-input">
+            <button class="btn-nobg search-btn" type="submit"><i class="fa fa-search"> </i></button>
+        </div>
+    </div>
+    <!--/.search-full-->
+
+</div>
+	
+<!-- /.Fixed navbar  -->
+<div class="container main-container headerOffsetProduct">
+    <div class="row">
+    
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Products</a></li>
+                <li><a href="category.html"> Categories </a></li>
+                <li><a href="category.html">Winter Wear</a></li>
+                <li class="active">Vera Dina Yellow Top</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row transitionfx">
+
+        <!-- left column -->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <!-- product Image and Zoom -->
+            <div class="main-image sp-wrap col-lg-12 no-padding"><a href="images/zoom/zoom1hi.jpg"><img
+                    src="images/zoom/zoom1.jpg" class="img-responsive" alt="img"></a> <a href="images/zoom/zoom2hi.jpg"><img
+                    src="images/zoom/zoom2.jpg" class="img-responsive" alt="img"></a> <a href="images/zoom/zoom3hi.jpg"><img
+                    src="images/zoom/zoom3.jpg" class="img-responsive" alt="img"></a></div>
+        </div>
+        <!--/ left column end -->
+
+        <!-- right column -->
+        <div class="col-lg-6 col-md-6 col-sm-5">
+            <h3 class="product-title"> VERA DINA YELLOW TOP</h3>
+
+            <div class="details-description">
+                <p>Rem sapiente facilis debitis ut cupiditate aspernatur exercitationem tempore eligendi eaque excepturi ... </p>
+            </div>
+            <div class="color-details"><span class="selected-color"><strong>COLOR</strong></span>
+                <ul class="swatches Color">
+                    <li class="selected"><a style="background-color:#fed019"> </a></li>
+                    <li><a style="background-color:#e76b2f"> </a></li>
+                    <li><a style="background-color:#5da02f"> </a></li>
+                </ul>
+            </div>
+            <!--/.color-details-->
+            <div class="prize_d">$84.34</div>
+            <div class="productFilter productFilterLook2" style="overflow: hidden;">
+            <span class="selected-color quanity-title"><strong>Quantity</strong></span>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                   <input class="quanitySniper" type="text" value="2" name="quanitySniper">
+                </div>
+            </div>
+            <input type="button" class="btn btn-warning btn_contact btn-add-cart" value="ADD TO CART">
+            <!-- productFilter -->
+            <!--/.cart-actions-->
+
+            <div class="clear"></div>
+        </div>
+        <!--/ right column end -->
+
+    </div>
+    <!--/.row-->
+    <div style="clear:both"></div>
+</div>
+<!-- /main-container -->
+
+<div class="gap"></div>
+<footer>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left">  2015 &copy; SpreeWorks </p>
+
+            <div class="col-center ">
+				<ul class="footer-link">
+                	<li><a href="#.">Privacy Policy</a></li>
+                    <li><a href="#.">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom-->
+</footer>
+
+
+
+<!-- Modal review start -->
+<div class="modal  fade" id="modal-review" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+                <h3 class="modal-title-site text-center">PRODUCT REVIEW </h3>
+            </div>
+            <div class="modal-body">
+
+                <h3 class="reviewtitle uppercase">You're reviewing: Lorem ipsum dolor sit amet</h3>
+
+                <form>
+                    <div class="form-group">
+                        <label>
+                            How do you rate this product? </label> <br>
+
+                        <div class="rating-here">
+                            <input type="hidden" class="rating-tooltip-manual" data-filled="fa fa-star fa-2x"
+                                   data-empty="fa fa-star-o fa-2x" data-fractions="3"/>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rtext">Name</label>
+                        <input type="text" class="form-control" id="rtext" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group ">
+                        <label>Review</label>
+                        <textarea class="form-control" rows="3" placeholder="Your Review" required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-dark">Submit Review</button>
+                </form>
+
+
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+
+    </div>
+    <!-- /.modal-dialog -->
+
+</div>
+<!-- /.Modal review -->
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+</script>
+<!-- jquery-migrate only for product details -->
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- include jqueryCycle plugin -->
+<script src="assets/js/jquery.cycle2.min.js"></script>
+<!-- include easing plugin -->
+<script src="assets/js/jquery.easing.1.3.js"></script>
+
+<!-- include  parallax plugin -->
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.js"></script>
+
+<!-- optionally include helper plugins -->
+<script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.min.js"></script>
+
+<!-- include mCustomScrollbar plugin //Custom Scrollbar  -->
+
+<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+
+<!-- include checkRadio plugin //Custom check & Radio  -->
+<script type="text/javascript" src="assets/js/ion-checkRadio/ion.checkRadio.min.js"></script>
+
+<!-- include grid.js // for equal Div height  -->
+<script src="assets/js/grids.js"></script>
+
+<!-- include carousel slider plugin  -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- include smoothproducts // product zoom plugin  -->
+<script type="text/javascript" src="assets/js/smoothproducts.min.js"></script>
+
+<!-- jQuery minimalect // custom select   -->
+<script src="assets/js/jquery.minimalect.min.js"></script>
+
+<!-- include touchspin.js // touch friendly input spinner component   -->
+<script src="assets/js/bootstrap.touchspin.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+
+
+<script src="assets/plugins/rating/bootstrap-rating.min.js"></script>
+<script>
+    $(function () {
+
+        $('.rating-tooltip-manual').rating({
+            extendSymbol: function () {
+                var title;
+                $(this).tooltip({
+                    container: 'body',
+                    placement: 'bottom',
+                    trigger: 'manual',
+                    title: function () {
+                        return title;
+                    }
+                });
+                $(this).on('rating.rateenter', function (e, rate) {
+                    title = rate;
+                    $(this).tooltip('show');
+                })
+                        .on('rating.rateleave', function () {
+                            $(this).tooltip('hide');
+                        });
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

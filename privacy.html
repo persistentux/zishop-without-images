@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ZISHOP - Privacy</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- include pace script for automatic web page progress bar  -->
+
+
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+
+    <script src="assets/js/pace.min.js"></script>
+</head>
+
+<body>
+
+<!-- Modal Login start -->
+<div class="modal signUpContent fade" id="ModalLogin" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+                <h3 class="modal-title-site text-center"> Login to TSHOP </h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-group login-username">
+                    <div>
+                        <input name="log" id="login-user" class="form-control input" size="20"
+                               placeholder="Enter Username" type="text">
+                    </div>
+                </div>
+                <div class="form-group login-password">
+                    <div>
+                        <input name="Password" id="login-password" class="form-control input" size="20"
+                               placeholder="Password" type="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <div class="checkbox login-remember">
+                            <label>
+                                <input name="rememberme" value="forever" checked="checked" type="checkbox">
+                                Remember Me </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input name="submit" class="btn  btn-block btn-lg btn-primary" value="LOGIN" type="submit">
+                    </div>
+                </div>
+                <!--userForm-->
+
+            </div>
+            <div class="modal-footer">
+                <p class="text-center"> Not here before? <a data-toggle="modal" data-dismiss="modal"
+                                                            href="#ModalSignup"> Sign Up. </a> <br>
+                    <a href="forgot-password.html"> Lost your password? </a></p>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+
+    </div>
+    <!-- /.modal-dialog -->
+
+</div>
+<!-- /.Modal Login -->
+
+<!-- Modal Signup start -->
+<div class="modal signUpContent fade" id="ModalSignup" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+                <h3 class="modal-title-site text-center"> REGISTER </h3>
+            </div>
+            <div class="modal-body">
+                <div class="control-group"><a class="fb_button btn  btn-block btn-lg " href="#"> SIGNUP WITH
+                    FACEBOOK </a></div>
+                <h5 style="padding:10px 0 10px 0;" class="text-center"> OR </h5>
+
+                <div class="form-group reg-username">
+                    <div>
+                        <input name="login" class="form-control input" size="20" placeholder="Enter Username"
+                               type="text">
+                    </div>
+                </div>
+                <div class="form-group reg-email">
+                    <div>
+                        <input name="reg" class="form-control input" size="20" placeholder="Enter Email" type="text">
+                    </div>
+                </div>
+                <div class="form-group reg-password">
+                    <div>
+                        <input name="password" class="form-control input" size="20" placeholder="Password"
+                               type="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <div class="checkbox login-remember">
+                            <label>
+                                <input name="rememberme" id="rememberme" value="forever" checked="checked"
+                                       type="checkbox">
+                                Remember Me </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input name="submit" class="btn  btn-block btn-lg btn-primary" value="REGISTER" type="submit">
+                    </div>
+                </div>
+                <!--userForm-->
+
+            </div>
+            <div class="modal-footer">
+                <p class="text-center"> Already member? <a data-toggle="modal" data-dismiss="modal" href="#ModalLogin">
+                    Sign in </a></p>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+
+    </div>
+    <!-- /.modal-dialog -->
+
+</div>
+
+<!-- Fixed navbar start -->
+<div class="navbar navbar-tshop navbar-fixed-top megamenu" role="navigation">
+    <div class="navbar-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                    <div class="pull-left ">
+                        <div class="logo-top"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
+                    <div class="pull-right">
+                        <ul class="userMenu ">
+                            <li><a href="account-1.html"><span class=""> My Account</span> <i
+                                    class="glyphicon glyphicon-user hide  "></i></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#ModalLogin"> <span class="hid den-xs">Sign In</span>
+                                <i class="glyphicon glyphicon-log-in hide  "></i> </a></li>
+                            <li class="hi dden-xs"><a href="#" data-toggle="modal" data-target="#ModalSignup"> Create
+                                Account </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.navbar-top-->
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span></span></button>
+            <button type="button" class="navbar-toggle icon-sub-menu" data-toggle="collapse"></button>
+            <button type="button" class="navbar-toggle icon-view-cart" data-toggle="collapse"></button>
+            <a class="navbar-brand " href="index.html"> <img src="images/logo.png" alt="TSHOP"> </a>
+
+            <!-- this part for mobile -->
+            <!--<div class="search-box pull-right hidden-lg hidden-md hidden-sm">
+                <div class="input-group">
+                    <button class="btn btn-nobg getFullSearch" type="button"><i class="fa fa-search"> </i></button>
+                </div>
+
+            </div>-->
+        </div>
+
+        <!-- this part is duplicate from cartMenu  keep it for mobile -->
+        
+        <!--/.navbar-cart-->
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"> Home </a></li>
+                <li><a  href="category.html"> Categories </a></li>
+                <li><a href="contact-us.html"> Contact Us </a></li>
+                
+            </ul>
+
+			
+            <!--- this part will be hidden for mobile version -->
+            <div class="nav navbar-nav navbar-right hidden-xs">
+                <div class="cartMenus "><a href="cart.html" class="" > View Cart<span class="count0">1</span></a></div>
+                    <!--/.dropdown-menu-->
+                </div>	
+                <!--/.cartMenu-->
+
+                
+                <!--/.search-box -->
+            </div>
+            <!--/.navbar-nav hidden-xs-->
+        </div>
+        <!--/.nav-collapse -->
+		<div class="search-bar-container container">
+	<div class="search-bar">
+    	<input type="text" onfocus="if (this.value=='Search for a brand, product or specific item')
+{this.value='';}" onblur="if (this.value=='') {this.value='Search for a brand, product or specific item';}" value="Search for a brand, product or specific item"  />
+        <a href="#." class="icon-close"></a>
+    </div>
+</div>
+</div>
+<!-- /.Fixed navbar  -->
+
+<div class="container main-container headerOffset">
+    <div class="row margin-top-10">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="row userInfo privacy">
+                <div class="col-xs-12 col-sm-12">
+                    <h1 class=" text-left  uppercase"> Privacy Policy </h1>
+
+
+                    <p> This privacy policy ("Privacy Policy") describes how we handle the personal information that you provide to us on this web site and related properties of Spree Commerce Inc. (the "Web Sites"). This Privacy Policy applies only to the Web Sites of Spree Commerce Inc. (the "Company"), not to any third party sites that may be accessible from here.  </p>
+                    <p class="no-margin">After reading this Privacy Policy, which is incorporated into and is a part of this Web Site's Terms of Use, you will know: </p>
+                    <ul class="list-dot">
+                            <li> What information the Company collects from you;</li>
+                            <li> How the Company uses your information;</li>
+                            <li> What choices you have about how the Company treats your information;</li>
+                            <li> How the Company protects your privacy;</li>
+                            <li> What about third party links, you access through the Web Site;</li>
+                            <li> What the Company does about children visiting the Web Site;</li>
+                            <li> How you can contact the Company.</li>
+                        </ul>
+                        <p>Please be sure to read this Privacy Policy before using the Web Sites or submitting information to us. Our Privacy Policy may change from time to time and your continued use of the Web Sites is acceptance of such changes, so please check this area periodically for updates to this Privacy Policy.
+</p>
+                        <hr>
+                    <div class="w100 clearfix">
+                        <h3 class="uppercase"> 1. Information the Company Collects From You  </h3>
+
+                        <p> You can visit the Web Site to read product and company information without telling us who you are and without revealing amy personally identifiable information. There are instances, however, where we request personally identifiable information to provide you a service, such as processing purchases, or to respond to a request for information. Described below are the ways in which we actively and passively collect information during a Web Site visit.  </p>
+                       <h3>Active Information Collection </h3>
+                       <p>Like many other websites, we actively collect information from our visitors both by asking specific questions on our Web Sites and by permitting you to communicate directly with us via online forms and e-mail. Some of the information that you submit may be personally identifiable (that is, information that can be uniquely identified with you, such as your name, business name, address, phone number. e-mail address, etc.). </p>
+                       <h3>Passive Information Collection 
+</h3>
+                       <p>As you navigate through a website, certain information may be passively collected (that is, gathered without you actively providing the information) using various technologies and means, such as navigational data collection. Like most website operators, we track IP addresses, assign internet tags, and use session, persistent and flash cookies and any other successor tracker technology. </p>
+                       <p>Our system also automatically gathers information about the areas you visit on this Web Site and collects operational informaton about the technology you use, such as the web site that referred you to us and other information. </p>
+                       <p>We reserve the right to use electronic images known as web beacons, also referred to as single-pixel gifs, and any other successor technology, that permit us to count users who have visited certain Web Site(s) pages and for other related statistics (eg., recording the popularity of certain Web Site(s) content and verifying system and server Integrity). </p>
+                      
+                        <hr>
+                        <h3> 2. How the Company Uses Your Information  </h3>
+
+                        <p>The Company uses your personal information for a variety of purposes, including to enhance the operation of the Web Sites, allow you to use all of their features, better understand what features and services may be of interest to you, and provide you with the services that you request (e.g., provisioning your demo store, helping you with professional services, etc.). The Company partners with other companies to provide specific services such as ecommerce web site development, payment processing, etc. As a result, when you access our services on this Web Site. we may share this information with some other third parties. While we do not authorize these other parties to use personally identifiable information except for the purposes of providing these services, the Company does not guarantee that this information can not be used in other manners by these third party providers.  </p>
+                        <p>We may send you information about our products and services and may contact you about new features or products in which we believe you may be interested. We also may use your contact information for marketing and other purposes. In addition, we may provide aggregate statistics about our customers, sales, online traffic patterns and related information to third parties, but these statistics will not include any personally identifying information. We also will disclose any information that it is required to disclose by law or by an appropriate government authority. </p>
+                        <p>Although the Company does not currently rent, sell, or otherwise share your information with third parties for purposes unrelated to this Web Site it may do so in the future. If you do not want your information to be shared, you should contact us at support@spreecommerce.com. </p>
+                        <hr>
+                        <h3> 3. Choices You Have About How the Company Uses Your Information  </h3>
+
+                        <p> We strive to provide you with choices regarding the personal information you provide to us. </p>
+                        <p>You may send us an e-mail message at support@spreecommerce.com to request access to, correct or delete any personal information that you have provided to us. To protect your privacy, we will only respond to e-mail messages sent from the e-mail account you specified when you gave us your contact information. Should you elect to have your information deleted, we will also delete your account. </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--/row end-->
+
+        </div>
+    </div>
+    <!--/row-->
+
+    <div style="clear:both"></div>
+</div>
+
+<!-- /wrapper -->
+
+<div class="gap"></div>
+<footer>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left">  2015 &copy; SpreeWorks </p>
+
+            <div class="col-center ">
+				<ul class="footer-link">
+                	<li><a href="#.">Privacy Policy</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom-->
+</footer>
+
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- include  parallax plugin -->
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.js"></script>
+
+<!-- optionally include helper plugins -->
+<script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.min.js"></script>
+
+<!-- include mCustomScrollbar plugin //Custom Scrollbar  -->
+
+<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+
+<!-- include checkRadio plugin //Custom check & Radio  -->
+<script type="text/javascript" src="assets/js/ion-checkRadio/ion.checkRadio.min.js"></script>
+
+<!-- include grid.js // for equal Div height  -->
+<script src="assets/js/grids.js"></script>
+
+<!-- include carousel slider plugin  -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- jQuery minimalect // custom select   -->
+<script src="assets/js/jquery.minimalect.min.js"></script>
+
+<!-- include touchspin.js // touch friendly input spinner component   -->
+<script src="assets/js/bootstrap.touchspin.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
+
